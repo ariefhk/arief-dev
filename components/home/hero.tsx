@@ -29,10 +29,12 @@ const HeroButton = () => {
 export default function Hero() {
   return (
     <SectionWrapper className="pt-[30px]">
-      <section className="overflow-hidden  sm:grid sm:grid-cols-3">
+      <section
+        id="about-me"
+        className="overflow-hidden  sm:grid sm:grid-cols-3">
         <div className=" md:pr-14 lg:pr-8 lg:py-24 lg:col-span-2 col-span-3">
           <div className="text-wrap">
-            <h1 className="text-text20_30  md:text-4xl lg:text-4xl font-extrabold">
+            <h1 className="text-text20_30  md:text-4xl lg:text-4xl xl:text-text48_48 font-extrabold">
               <span className=" bg-clip-text  bg-gradient-to-r from-primary-400 to-secondary-600">
                 Hello, I&apos;m{" "}
               </span>
@@ -53,7 +55,7 @@ export default function Hero() {
                 repeat={Infinity}
               />
             </h1>
-            <p className="  text-text12_20 md:text-text14_22   mt-4 md:block ">
+            <p className="  text-text12_20 md:text-text14_22  xl:text-text16_24  mt-4 md:mt-6 md:block ">
               I am dedicated to continuous learning and staying updated with the
               latest trends and best practices in web development. My
               problem-solving skills, combined with a passion for developing{" "}

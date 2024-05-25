@@ -1,20 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-// import { Checkbox } from "@/components/ui/checkbox"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import useScroll from "@/hooks/use-scroll"
 import { cn } from "@/lib/tailwind-utils"
-import { Menu, Package2 } from "lucide-react"
+import { Menu } from "lucide-react"
 import Link from "next/link"
 import { DarkModeButton } from "./dark-mode-button"
 import SectionWrapper from "./section-wrapper"
