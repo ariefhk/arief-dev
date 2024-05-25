@@ -28,10 +28,8 @@ const HeroButton = () => {
 
 export default function Hero() {
   return (
-    <SectionWrapper className="pt-[30px]">
-      <section
-        id="about-me"
-        className="overflow-hidden  sm:grid sm:grid-cols-3">
+    <SectionWrapper id="about-me" className="pt-[30px] min-h-screen ">
+      <section className="overflow-hidden  sm:grid sm:grid-cols-3">
         <div className=" md:pr-14 lg:pr-8 lg:py-24 lg:col-span-2 col-span-3">
           <div className="text-wrap">
             <h1 className="text-text20_30  md:text-4xl lg:text-4xl xl:text-text48_48 font-extrabold">

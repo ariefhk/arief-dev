@@ -1,6 +1,6 @@
 import { cn } from "@/lib/tailwind-utils"
 
-type SectionWrapperProps = {
+interface SectionWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string
   children: React.ReactNode
 }
@@ -8,11 +8,13 @@ type SectionWrapperProps = {
 export default function SectionWrapper({
   className,
   children,
+  ...props
 }: Readonly<SectionWrapperProps>) {
   return (
-    <section
+    <div
+      {...props}
       className={cn("max-w-screen-xl mx-auto px-5 lg:px-7 h-full", className)}>
       {children}
-    </section>
+    </div>
   )
 }

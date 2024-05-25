@@ -1,3 +1,4 @@
+import Footer from "@/components/common/footer"
 import Navbar from "@/components/common/navbar"
 import ScrollTopButton from "@/components/common/scroll-top"
 import React from "react"
@@ -10,8 +11,9 @@ export default function Layout({ children }: Readonly<AppLayoutProps>) {
   return (
     <main>
       <Navbar />
-      <section className="py-[64px]"> {children}</section>
+      <section className="py-[64px] "> {children}</section>
       <ScrollTopButton />
+      <Footer />
     </main>
   )
 }
