@@ -36,15 +36,16 @@ const sosmed = [
 const Footer = () => {
   return (
     <div>
-      <Separator />
       <SectionWrapper className="grid py-10 md:grid-cols-2 gap-y-10 md:gap-y-0">
         <div className="space-y-5 order-last md:order-first">
           <div className="space-y-2">
             <h1 className="text-text24_30 font-bold">Let{"'"}s Connect</h1>
             <p className="text-text14_22 text-muted-foreground">
-              I{"'"}m currently looking for new opportunities, <br /> my inbox
-              is always open. Whether you have a question or <br /> just want to
-              say hi, I{"'"}ll try my best to get back to you!
+              I{"'"}m currently looking for new opportunities,{" "}
+              <br className="md:block hidden" /> my inbox is always open.
+              Whether you have a question or <br className="md:block hidden" />{" "}
+              just want to say hi, I{"'"}
+              ll try my best to get back to you!
             </p>
           </div>
           <div className="flex items-center gap-x-5">

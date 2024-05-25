@@ -28,7 +28,7 @@ const HeroButton = () => {
 
 export default function Hero() {
   return (
-    <SectionWrapper id="about-me" className="pt-[30px] min-h-screen ">
+    <SectionWrapper id="about-me" className="pt-[30px]  lg:min-h-screen">
       <section className="overflow-hidden  sm:grid sm:grid-cols-3">
         <div className=" md:pr-14 lg:pr-8 lg:py-24 lg:col-span-2 col-span-3">
           <div className="text-wrap">
@@ -53,7 +53,7 @@ export default function Hero() {
                 repeat={Infinity}
               />
             </h1>
-            <p className="  text-text12_20 md:text-text14_22  xl:text-text16_24  mt-4 md:mt-6 md:block ">
+            <p className=" text-text14_22  xl:text-text16_24  mt-4 md:mt-6 md:block ">
               I am dedicated to continuous learning and staying updated with the
               latest trends and best practices in web development. My
               problem-solving skills, combined with a passion for developing{" "}
