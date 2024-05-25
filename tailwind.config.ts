@@ -3,11 +3,11 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +18,21 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        text12_20: ["12px", "20px"],
+        text14_20: ["14px", "20px"],
+        text14_22: ["14px", "22px"],
+        text16_20: ["16px", "20px"],
+        text16_22: ["16px", "22px"],
+        text16_24: ["16px", "24px"],
+        text18_20: ["18px", "20px"],
+        text18_26: ["18px", "26px"],
+        text20_30: ["20px", "30px"],
+        text22_30: ["22px", "30px"],
+        text24_30: ["24px", "30px"],
+        text48_48: ["48px", "48px"],
+        text50_60: ["50px", "60px"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,7 +89,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config
 
 export default config

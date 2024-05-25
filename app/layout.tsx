@@ -1,11 +1,14 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import NPProgresBarProvider from "@/components/provider/np-progress-provider"
 import ReactQueryProvider from "@/components/provider/react-query-provider"
 import { ThemeProvider } from "@/components/provider/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] })
+const jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "500", "600", "700", "800"],
+})
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} antialiased`}
+        className={`${jakarta_sans.className} antialiased`}
         suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
