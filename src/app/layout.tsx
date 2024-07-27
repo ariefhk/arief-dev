@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { poppins, rubik } from "@/lib/font";
 import { cn } from "@/lib/class-merge";
 import Navbar from "@/components/common/navbar";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Arief Dev",
@@ -19,13 +20,24 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${rubik.variable} antialiased`} suppressHydrationWarning>
         <main
           className={cn(
-            "flex relative screen break-words min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-[radial-gradient(#000000_0.1px,transparent_1px)] [background-size:16px_16px]",
+            "flex relative screen break-words min-h-screen pt-14 pb-[80px] px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-[radial-gradient(#000000_0.1px,transparent_1px)] [background-size:16px_16px]",
             { "bg-white": "#E6E7EB" }
           )}
         >
           {/* NAVBAR ->  */}
           <Navbar />
           {children}
+
+          <p className="absolute bottom-1 text-sm left-[50%] w-full translate-x-[-50%]  text-center font-poppins font-medium">
+            Inspired by{" "}
+            <Link
+              className="text-[#2f7df4] hover:font-bold hover:underline hover:underline-offset-4 "
+              href="https://github.com/taqui-786"
+            >
+              Md Taqui Imam
+            </Link>
+            , edited by Me
+          </p>
         </main>
       </body>
     </html>

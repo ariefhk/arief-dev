@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { Download } from "lucide-react";
 
-export default function DonwloadResume() {
+export default function DownloadResume() {
   return (
     <Button size={"lg"} asChild className="w-max mt-2 py-2 px-4 text-base flex justify-center items-center gap-x-2">
       <Link

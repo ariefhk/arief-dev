@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/class-merge";
-import { Briefcase, Home, Layers, Lightbulb, PackagePlus, Phone, User2 } from "lucide-react";
+import { Briefcase, Home, Layers, Lightbulb, Phone, User2 } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
